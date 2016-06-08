@@ -8,9 +8,10 @@ include "header.php";
 
 <?php
 if (isset($_POST['submit'])) {
-  $SendTo = "expomilwaukee@gmail.com";
+  $SendTo = "mark@expomilwaukee.com";
   $Subject = "Quote Request";
-  $From = "From: " . $_POST['name'] . " <" . $_POST['email'] . ">\r\n";
+  $Headers = "Bcc: mark@foresitegrp.com\r\n";
+  $Headers .= "From: " . $_POST['name'] . " <" . $_POST['email'] . ">\r\n";
   
   $Message = $_POST['name'] . "\n";
   if (!empty($_POST['email'])) $Message .= $_POST['email'] . "\n";
@@ -45,7 +46,7 @@ if (isset($_POST['submit'])) {
   
   $Message = stripslashes($Message);
   
-  mail($SendTo, $Subject, $Message, $From);
+  mail($SendTo, $Subject, $Message, $Headers);
   //echo "<pre>".$Message."</pre>";
   
   echo "Your information has been sent!  Thank you for your interest in Expo Milwaukee.  You will be contacted within two business days. If you need immediate service please call 414-727-9456.<br>";
