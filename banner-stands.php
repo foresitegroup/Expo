@@ -12,14 +12,19 @@ include "header.php";
   <h4>SilverStep Retractable Banner Stand</h4><br>
   Durable and uniquely designed, this aluminum stand is the perfect combination of versatility, appeal, and affordability.<br>
   <br>
+
+  <img src="images/free-ground-shipping.png" alt="" style="float: right; width: 90px; height: auto;">
+
   <ul>
     <li>Silverstep travel bag (41" x 12" x 4")</li>
     <li>Retractable base with end caps</li>
     <li>Telescopic pole</li>
     <li>One top clamp bar with end caps or velcro</li>
     <li>Support pole</li>
+    <li>UPS Ground Shipping within the continental United States only</li>
   </ul>
   <br>
+
   <a href="quote-request.php">Request A Quote</a>
 </div>
 
